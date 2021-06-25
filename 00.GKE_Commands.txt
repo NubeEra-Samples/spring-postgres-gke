@@ -1,3 +1,8 @@
+#Setting Defaults
+#################
+gcloud config list --format 'value(core.project)' 2>/dev/null
+			or
+gcloud config get-value project 2> /dev/null
 gcloud config set project prj2406
 gcloud config get-value project
 
@@ -10,7 +15,7 @@ REGION
 gcloud config set compute/region asia-south1
 
 
-Prepare Container from GCR
+#Prepare Container from GCR
 # gcloud builds submit --tag gcr.io/prj2406/helloworld-gke .
 
 
