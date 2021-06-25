@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: hello
 spec:
+  clusterIP: 10.39.240.114
+  externalTrafficPolicy: Cluster
   type: LoadBalancer
   selector:
     app: hello

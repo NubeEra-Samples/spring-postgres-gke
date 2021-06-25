@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: postgres
 spec:
+  clusterIP: 10.39.240.115
+  externalTrafficPolicy: Cluster
   ports:
     - port: 5432
   selector:
